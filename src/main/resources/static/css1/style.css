@@ -21,7 +21,7 @@ li {
 }
 
 li a {
-  /* //display: block; */
+  /* display: block;  */
   color: black; /* Changed text color to black for better visibility on white background */
   text-align: center;
   padding: 144px 40px;
