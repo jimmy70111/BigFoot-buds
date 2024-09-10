@@ -1,42 +1,39 @@
-
-
 /* Styles for the navigation bar */
 header {
-  background-color: #333;
+  background-color: white; /* Changed background color to white */
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto; /* Center align the ul */
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: white; /* Background color set to white */
+  text-align: center; /* Center align the list items */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center the list items horizontally */
+  cursor: pointer;
+
 }
 
 li {
-  float: left;
+  display: inline-block; /* Make the list items inline blocks for proper spacing */
 }
 
 li a {
-  display: block;
-  color: white;
+  /* //display: block; */
+  color: black; /* Changed text color to black for better visibility on white background */
   text-align: center;
-  padding: 14px 16px;
+  padding: 144px 40px;
   text-decoration: none;
-  border-right: 1px solid #bbb; /* Added to all 'a' elements within 'li' */
+  /* //border-right: 1px solid #bbb; Added border to all 'a' elements within 'li' */
 }
 
-li:last-child a {
-  border-right: none; /* Remove border for the last item */
-}
 
-li a:hover:not(.active) {
-  background-color: #111;
-}
 
-.active {
-  background-color: #04AA6D;
-}
+
+
+
 
 /* Ensure the main content area is displayed correctly */
 main {
