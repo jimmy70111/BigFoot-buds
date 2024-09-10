@@ -1,0 +1,44 @@
+
+
+/* Styles for the navigation bar */
+header {
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb; /* Added to all 'a' elements within 'li' */
+}
+
+li:last-child a {
+  border-right: none; /* Remove border for the last item */
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Ensure the main content area is displayed correctly */
+main {
+  padding: 20px;
+}

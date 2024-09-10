@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spring Boot with HTML, CSS, JS</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Link to CSS in the static folder -->
+    <link rel="stylesheet" href="/css1/style.css"> <!-- Link to CSS in the static folder -->
+
 </head>
 <body>
-    <h1>Hello from Spring Boot!</h1>
-    <button onclick="showMessage()">Click Me</button>
+    <header>
+        <ul>
+            <li><a class="active" href="#home">Home1</a></li>
+            <li><a href="#news">Hybrid</a></li>
+            <li><a href="#contact">Sativa</a></li>
+            <li><a href="#contact">Indica</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </header>
+    
+    <main>
+        <h1>Hello from Spring Boot!</h1>
+        <button onclick="showMessage()">Click Me</button>
+    </main>
+
     <script src="/js/script.js"></script> <!-- Link to JS in the static folder -->
 </body>
 </html>
