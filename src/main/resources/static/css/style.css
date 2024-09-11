@@ -22,6 +22,20 @@ h1 {
   max-height: 100%; /* Ensure the image does not exceed the container's height */
 }
 
+.logo {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 600px; /* Set height for vertical alignment */
+  position: relative; /* Ensure the container is the reference for absolute positioning */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure the image is responsive */
+  max-height: 100%; /* Ensure the image does not exceed the container's height */
+}
+
+
 /* Header styles */
 header {
   background-color: white; /* Background color for the header */
