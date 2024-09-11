@@ -24,10 +24,12 @@ h1 {
 
 .logo {
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  height: 600px; /* Set height for vertical alignment */
+  justify-content: left; /* Center content horizontally */
+  align-items: left; /* Center content vertically */
+  height: 200px; /* Set height for vertical alignment */
+  width: 700px;
   position: relative; /* Ensure the container is the reference for absolute positioning */
+  top: -700px;
 }
 
 .logo img {
