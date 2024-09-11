@@ -41,12 +41,15 @@ ul {
 
 li {
   display: inline-block; /* Display list items inline */
+  font-size: 2rem;
+
 }
 
 li a {
+  display: block; 
   color: black; /* Text color for the links */
   text-align: center; /* Center text within links */
-  padding: 15px 20px; /* Add padding for better spacing */
+  padding: 20px 30px; /* Add padding for better spacing */
   text-decoration: none; /* Remove underline from links */
   display: inline-block; /* Ensure proper spacing and block display */
 }
