@@ -1,10 +1,10 @@
-/* Styles for the heading */
+ /* Styles for the heading */
 h1 {
   font-size: 4.5rem; /* Adjusts the font size */
   color: #333; /* Sets the text color */
   text-align: left; /* Aligns the text to the left */
   position: absolute; /* Position absolutely relative to the nearest positioned ancestor */
-  top: 140px; /* Moves the heading down by 240px */
+  top: 140px; /* Moves the heading down by 140px */
   left: 80px; /* Moves the heading to the right by 80px */
 }
 
@@ -24,8 +24,8 @@ h1 {
 
 .logo {
   display: flex;
-  justify-content: left; /* Center content horizontally */
-  align-items: left; /* Center content vertically */
+  justify-content: left; /* Align content to the left horizontally */
+  align-items: left; /* Align content to the left vertically */
   height: 200px; /* Set height for vertical alignment */
   width: 700px;
   position: relative; /* Ensure the container is the reference for absolute positioning */
@@ -36,7 +36,6 @@ h1 {
   max-width: 100%; /* Ensure the image is responsive */
   max-height: 100%; /* Ensure the image does not exceed the container's height */
 }
-
 
 /* Header styles */
 header {
@@ -58,7 +57,6 @@ ul {
 li {
   display: inline-block; /* Display list items inline */
   font-size: 2rem;
-
 }
 
 li a {
@@ -78,4 +76,36 @@ li a.active {
 main {
   padding: 20px; /* Add padding around the main content */
   position: relative; /* Ensure the main area is positioned relative for the absolute positioning of the heading */
+}
+
+
+.image-slider {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.image-slider img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.image-slider img.active {
+  display: block;
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.slider-button.prev {
+  left: 0;
+}
+.slider-button.next {
+  right: 0;
 }

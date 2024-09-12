@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spring Boot with HTML, CSS, JS</title>
-    <link rel="stylesheet" href="/css1/style.css"> <!-- Link to CSS in the static folder -->
-
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to CSS in the static folder -->
+  
 </head>
 <body>
     <header>
@@ -20,18 +20,25 @@
     </header>
     
     <main>
-        <h1>    Ultimate Trios!</h1>
-        <!-- <button onclick="showMessage()">Click Me</button> -->
-        <div class="container">
-            <img src="/images/Bigfootmain.png" alt="BigFootBuds Trio pic" width="500" height="500">
+        <h1>Ultimate Trios!</h1>
+
+        <!-- Image Slider -->
+        <div class="image-slider">
+            <img src="/images/Bigfootmain1.png" alt="BigFootBuds Trio pic 1" class="active">
+            <img src="/images/Bigfootmain2.png" alt="BigFootBuds Trio pic 2">
+            <img src="/images/Bigfootmain3.png" alt="BigFootBuds Trio pic 3">
+            <!-- Previous and Next buttons -->
+            <button class="slider-button prev" onclick="prevImage()">←</button>
+            <button class="slider-button next" onclick="nextImage()">→</button>
         </div>
 
         <div class="logo">
-            <img src="/images/logo.png"  width="500" height="500">
+            <img src="/images/logo.png" width="500" height="500">
         </div>
 
     </main>
 
-    <script src="/js/script.js"></script> <!-- Link to JS in the static folder -->
+    <script src="/js1/script.js"></script> <!-- Link to JS in the static folder -->
+
 </body>
 </html>
