@@ -29,7 +29,7 @@ h1 {
   height: 200px; /* Set height for vertical alignment */
   width: 700px;
   position: relative; /* Ensure the container is the reference for absolute positioning */
-  top: -700px;
+  top: -750px;
 }
 
 .logo img {
@@ -81,8 +81,8 @@ main {
 
 .image-slider {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   margin: auto;
 }
 .image-slider img {
