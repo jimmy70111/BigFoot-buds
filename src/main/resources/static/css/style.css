@@ -1,5 +1,5 @@
- /* Styles for the heading */
- h1 {
+/* Styles for the heading */
+h1 {
   font-size: 4.5rem; /* Adjusts the font size */
   color: #333; /* Sets the text color */
   text-align: left; /* Aligns the text to the left */
@@ -22,21 +22,26 @@
   max-height: 100%; /* Ensure the image does not exceed the container's height */
 }
 
+/* Logo container styles */
 .logo {
   display: flex;
   justify-content: left; /* Align content to the left horizontally */
   align-items: left; /* Align content to the left vertically */
-  height: 300px; /* Set height for vertical alignment */
-  width: 700px;
+  max-width: 100%; /* Use max-width to allow resizing */
+  height: auto; /* Adjust height automatically based on width */
+  width: 10%; /* Set width relative to the parent container */
+  margin-top: -790px; /* Add margin for spacing */
+  margin-left: 200px;
   position: relative; /* Ensure the container is the reference for absolute positioning */
-  top: -750px;
-  margin-top: 10px;
 }
 
+/* Logo image styles */
 .logo img {
   max-width: 100%; /* Ensure the image is responsive */
-  max-height: 100%; /* Ensure the image does not exceed the container's height */
+  height: auto; /* Adjust height automatically based on the aspect ratio */
+  display: block; /* Remove extra space below images */
 }
+
 
 /* Header styles */
 header {
@@ -46,7 +51,7 @@ header {
 
 ul {
   list-style-type: none;
-  margin: 0; /* Remove default margin */
+  margin: 10; /* Remove default margin */
   padding: 0; /* Remove default padding */
   overflow: hidden; /* Ensure no content overflow */
   background-color: white; /* Background color for the navigation bar */
@@ -56,17 +61,15 @@ ul {
 }
 
 li {
-  display: inline-block; /* Display list items inline */
-  font-size: 2rem;
+  display: inline-block; /* Make the list items inline blocks for proper spacing */
 }
 
 li a {
-  display: block; 
-  color: black; /* Text color for the links */
-  text-align: center; /* Center text within links */
-  padding: 20px 30px; /* Add padding for better spacing */
-  text-decoration: none; /* Remove underline from links */
-  display: inline-block; /* Ensure proper spacing and block display */
+  color: black;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin-top: 100px !important; /* Force margin-top to apply */
 }
 
 li a.active {
@@ -79,21 +82,23 @@ main {
   position: relative; /* Ensure the main area is positioned relative for the absolute positioning of the heading */
 }
 
-
 .image-slider {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   margin: auto;
 }
+
 .image-slider img {
   width: 100%;
   height: 100%;
   display: none;
 }
+
 .image-slider img.active {
   display: block;
 }
+
 .slider-button {
   position: absolute;
   top: 50%;
@@ -104,9 +109,11 @@ main {
   padding: 10px;
   cursor: pointer;
 }
+
 .slider-button.prev {
   left: 0;
 }
+
 .slider-button.next {
   right: 0;
 }
