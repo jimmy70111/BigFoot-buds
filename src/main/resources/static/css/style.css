@@ -1,5 +1,5 @@
  /* Styles for the heading */
-h1 {
+ h1 {
   font-size: 4.5rem; /* Adjusts the font size */
   color: #333; /* Sets the text color */
   text-align: left; /* Aligns the text to the left */
@@ -26,10 +26,11 @@ h1 {
   display: flex;
   justify-content: left; /* Align content to the left horizontally */
   align-items: left; /* Align content to the left vertically */
-  height: 200px; /* Set height for vertical alignment */
+  height: 300px; /* Set height for vertical alignment */
   width: 700px;
   position: relative; /* Ensure the container is the reference for absolute positioning */
   top: -750px;
+  margin-top: 10px;
 }
 
 .logo img {
@@ -108,4 +109,11 @@ main {
 }
 .slider-button.next {
   right: 0;
+}
+
+.inter-font {
+  font-family: "Inter", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400; /* <weight>: Use a value from 100 to 900 */
+  font-style: normal;
 }
