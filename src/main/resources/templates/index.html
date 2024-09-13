@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spring Boot with HTML, CSS, JS</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Link to CSS in the static folder -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Link to CSS in the static folder -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); /*Font*/
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); /*Font*/
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <ul>
-            <li class = "inter-font"><a class="active" href="/">Home</a></li>
-            <li class = "inter-font"><a href="/pages/hybrid.html" style="color: rgb(139, 202, 223)">Hybrid</a></li>
-            <li class = "inter-font"><a href="/pages/sativa.html" style="color: rgb(255, 230, 0)">Sativa</a></li>
-            <li class = "inter-font"><a href="/pages/indica.html" style="color: rgb(250, 142, 160)">Indica</a></li>
-            <li class = "inter-font"><a href="/pages/contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li class="inter-font"><a class="active" href="/">Home</a></li>
+        <li class="inter-font">
+          <a href="/pages/hybrid.html" style="color: rgb(139, 202, 223)"
+            >Hybrid</a
+          >
+        </li>
+        <li class="inter-font">
+          <a href="/pages/sativa.html" style="color: rgb(255, 230, 0)"
+            >Sativa</a
+          >
+        </li>
+        <li class="inter-font">
+          <a href="/pages/indica.html" style="color: rgb(250, 142, 160)"
+            >Indica</a
+          >
+        </li>
+        <li class="inter-font"><a href="/pages/contact.html">Contact</a></li>
+      </ul>
     </header>
-    
+
     <main>
-        <h1 class = "inter-font">Ultimate Trios! </h1>
+      <h1 class="inter-font">Ultimate Trios!</h1>
 
-        <!-- Image Slider -->
-        <div class="image-slider">
-            <img src="/images/Bigfootmain1.png" alt="BigFootBuds Trio pic 1" class="active">
-            <img src="/images/Bigfootmain2.png" alt="BigFootBuds Trio pic 2">
-            <img src="/images/Bigfootmain3.png" alt="BigFootBuds Trio pic 3">
-            <!-- Previous and Next buttons -->
-            <button class="slider-button prev" onclick="prevImage()">←</button>
-            <button class="slider-button next" onclick="nextImage()">→</button>
-        </div>
+      <!-- Image Slider -->
+      <div class="image-slider">
+        <img
+          src="/images/Bigfootmain1.png"
+          alt="BigFootBuds Trio pic 1"
+          class="active"
+        />
+        <img src="/images/Bigfootmain2.png" alt="BigFootBuds Trio pic 2" />
+        <img src="/images/Bigfootmain3.png" alt="BigFootBuds Trio pic 3" />
+        <!-- Previous and Next buttons -->
+        <button class="slider-button prev" onclick="prevImage()">←</button>
+        <button class="slider-button next" onclick="nextImage()">→</button>
+      </div>
 
-        <div class="logo">
-            <img src="/images/logo.png" width="500" height="500">
-        </div>
+      <div class="logo">
+        <img src="/images/logo.png" width="500" height="500" />
+      </div>
 
+      <div class="description">
+        <section>
+          <h2>Description</h2>
+          <p>
+            The ultimate storage solution for cannabis enthusiasts who demand
+            both quality and style. Crafted with care and wrapped in durable,
+            rustic canvas, these jars are designed to keep your cannabis fresh,
+            potent, and protected.
+          </p>
+        </section>
+        <hr />
+        <section>
+          <h3>Ingredient <span onclick="toggle(event, 'ingredient')">+</span></h3>
+          <p class="itemContent ingredient">
+            The ultimate storage solution for cannabis enthusiasts who demand
+            both quality and style.
+          </p>
+        </section>
+        <hr />
+        <section>
+          <h3>Testimonials <span onclick="toggle(event, 'testimonials')">+</span></h3>
+          <p class="itemContent testimonials">
+            Crafted with care and wrapped in durable, rustic canvas, these jars
+            are designed to keep your cannabis fresh, potent, and protected.
+          </p>
+        </section>
+        <hr />
+      </div>
     </main>
 
-    <script src="/js1/script.js"></script> <!-- Link to JS in the static folder -->
-
-</body>
+    <script src="/js/script.js"></script>
+  
+    <!-- Link to JS in the static folder -->
+  </body>
 </html>

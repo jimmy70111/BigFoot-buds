@@ -124,3 +124,14 @@ main {
   font-weight: 400; /* <weight>: Use a value from 100 to 900 */
   font-style: normal;
 }
+.description {
+  width: 30%;
+}
+
+.active {
+  display: block !important;
+}
+
+.itemContent {
+  display: none;
+}
