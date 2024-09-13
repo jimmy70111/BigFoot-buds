@@ -8,19 +8,7 @@ h1 {
   left: 80px; /* Moves the heading to the right by 80px */
 }
 
-/* Container styles */
-.container {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  height: 600px; /* Set height for vertical alignment */
-  position: relative; /* Ensure the container is the reference for absolute positioning */
-}
 
-.container img {
-  max-width: 100%; /* Ensure the image is responsive */
-  max-height: 100%; /* Ensure the image does not exceed the container's height */
-}
 
 /* Logo container styles */
 .logo {
@@ -42,39 +30,6 @@ h1 {
   display: block; /* Remove extra space below images */
 }
 
-
-/* Header styles */
-header {
-  background-color: white; /* Background color for the header */
-  padding: 10px 0; /* Add padding around the header */
-}
-
-ul {
-  list-style-type: none;
-  margin: 10; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  overflow: hidden; /* Ensure no content overflow */
-  background-color: white; /* Background color for the navigation bar */
-  text-align: center; /* Center align the list items */
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Center list items horizontally */
-}
-
-li {
-  display: inline-block; /* Make the list items inline blocks for proper spacing */
-}
-
-li a {
-  color: black;
-  text-align: center;
-  padding: 14px 40px;
-  text-decoration: none;
-  margin-top: 100px !important; /* Force margin-top to apply */
-}
-
-li a.active {
-  font-weight: bold; /* Make active link bold */
-}
 
 /* Main content styles */
 main {
