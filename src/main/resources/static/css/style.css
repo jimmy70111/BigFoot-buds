@@ -75,6 +75,7 @@ li a.active {
 
 /* Main content styles */
 main {
+  /* display: flex; */
   padding: 20px; /* Add padding around the main content */
   position: relative; /* Ensure the main area is positioned relative for the absolute positioning of the heading */
 }
@@ -116,4 +117,16 @@ main {
   font-optical-sizing: auto;
   font-weight: 400; /* <weight>: Use a value from 100 to 900 */
   font-style: normal;
+}
+
+.description {
+  width: 30%;
+}
+
+.active {
+  display: block !important;
+}
+
+.itemContent {
+  display: none;
 }
