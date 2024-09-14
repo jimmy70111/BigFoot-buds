@@ -7,6 +7,8 @@
     <title>Spring Boot with HTML, CSS, JS</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
     <!-- Link to CSS in the static folder -->
     <style>
@@ -15,20 +17,40 @@
   </head>
   <body>
     <header>
-        <nav class="nav justify-content-center">
-            <a class="nav-link active" href="/"   style=" color: black;">Home  </a>
-            <a class="nav-link" href="/pages/hybrid.html" style="color: rgb(139, 202, 223)">Hybrid</a>
-            <a class="nav-link" href="/pages/sativa.html" style="color: rgb(255, 230, 0)">Sativa</a>
-            <a class="nav-link" href="/pages/indica.html" style="color: rgb(250, 142, 160)">Indica</a>
-            <a class="nav-link" href="/pages/contact.html" style= "color: black;">Contact</a>
-        </nav>
+
+      <nav class="nav justify-content-center" style="margin-top: 20px;">
+        <a class="nav-link active" href="/" style="color: black; font-size: 20px; font-family: 'Times New Roman', serif;">Home</a>
+        <a class="nav-link" href="/pages/hybrid.html" style="color: rgb(139, 202, 223); font-size: 20px; font-family: 'Times New Roman', serif;">Hybrid</a>
+        <a class="nav-link" href="/pages/sativa.html" style="color: rgb(255, 230, 0); font-size: 20px; font-family: 'Times New Roman', serif;">Sativa</a>
+        <a class="nav-link" href="/pages/indica.html" style="color: rgb(250, 142, 160); font-size: 20px; font-family: 'Times New Roman', serif;">Indica</a>
+        <a class="nav-link" href="/pages/contact.html" style="color: black; font-size: 20px; font-family: 'Times New Roman', serif;">Contact</a>
+    </nav>
+    
+    
+    <style>
+        @media (max-width: 768px) {
+            nav.nav {
+                margin-top: 40px; /* Adjust margin for smaller screens */
+            }
+        }
+    </style>
+
     </header>
 
 
 
 
     <main>
+
+
+
       <h1 class="inter-font">Ultimate Trios!</h1>
+
+
+
+
+
+
 
       <!-- Image Slider -->
       <div class="image-slider">
@@ -48,35 +70,69 @@
         <img src="/image1/logo.png" width="500" height="500" />
       </div>
 
-      <div class="description">
-        <section>
-          <h2>Description</h2>
-          <p>
-            The ultimate storage solution for cannabis enthusiasts who demand
-            both quality and style. Crafted with care and wrapped in durable,
-            rustic canvas, these jars are designed to keep your cannabis fresh,
-            potent, and protected.
-          </p>
+
+
+
+      <div class="description container mt-4" style="font-family: 'Times New Roman';">
+        <section class="container mt-4 mb-4">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+              <h2>Description</h2>
+              <div class="description-content">
+                <p>
+                  The ultimate storage solution for cannabis enthusiasts who demand
+                  both quality and style. Crafted with care and wrapped in durable,
+                  rustic canvas, these jars are designed to keep your cannabis fresh,
+                  potent, and protected.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
+      
+        
         <hr />
-        <section>
-          <h3>Ingredient <span onclick="toggle(event, 'ingredient')">+</span></h3>
-          <p class="itemContent ingredient">
-            The ultimate storage solution for cannabis enthusiasts who demand
-            both quality and style.
-          </p>
+      
+        <section class="mb-4">
+          <h3>Ingredient 
+            <span onclick="toggle(event, 'ingredient')" class="text-primary" style="cursor: pointer;">+</span>
+          </h3>
+          <div class="description-content">
+            <p class="itemContent ingredient">
+              The ultimate storage solution for cannabis enthusiasts who demand
+              both quality and style.
+            </p>
+          </div>
         </section>
+      
         <hr />
-        <section>
-          <h3>Testimonials <span onclick="toggle(event, 'testimonials')">+</span></h3>
-          <p class="itemContent testimonials">
-            Crafted with care and wrapped in durable, rustic canvas, these jars
-            are designed to keep your cannabis fresh, potent, and protected.
-          </p>
+      
+        <section class="mb-4">
+          <h3>Testimonials 
+            <span onclick="toggle(event, 'testimonials')" class="text-primary" style="cursor: pointer;">+</span>
+          </h3>
+          <div class="description-content">
+            <p class="itemContent testimonials">
+              Crafted with care and wrapped in durable, rustic canvas, these jars
+              are designed to keep your cannabis fresh, potent, and protected.
+            </p>
+          </div>
         </section>
+      
         <hr />
       </div>
+      
+      
+      
+
+
+
+
+
+
     </main>
+
+
 
     <script src="/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> <!-- jQuery -->
