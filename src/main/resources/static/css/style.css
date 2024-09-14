@@ -1,22 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Main content styles */
-main {
-  padding: 20px; /* Add padding around the main content */
-  position: relative; /* Ensure the main area is positioned relative for the absolute positioning of the heading */
-}
-
 .image-slider {
   position: relative;
   width: 700px;
