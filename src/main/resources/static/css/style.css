@@ -20,26 +20,6 @@ h1 {
 
 
 
-/* Logo container styles */
-.logo {
-  display: flex;
-  justify-content: left; /* Align content to the left horizontally */
-  align-items: left; /* Align content to the left vertically */
-  max-width: 100%; /* Use max-width to allow resizing */
-  height: auto; /* Adjust height automatically based on width */
-  width: 10%; /* Set width relative to the parent container */
-  margin-top: -790px; /* Add margin for spacing */
-  margin-left: 200px;
-  position: relative; /* Ensure the container is the reference for absolute positioning */
-}
-
-/* Logo image styles */
-.logo img {
-  max-width: 100%; /* Ensure the image is responsive */
-  height: auto; /* Adjust height automatically based on the aspect ratio */
-  display: block; /* Remove extra space below images */
-}
-
 
 /* Main content styles */
 main {
