@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spring Boot with HTML, CSS, JS</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css1/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 
     <!-- Link to CSS in the static folder -->
     <style>
@@ -16,6 +15,8 @@
     </style>
   </head>
   <body>
+
+
     <header>
 
       <div class="container my-4 d-flex align-items-center">
@@ -31,8 +32,6 @@
         </nav>
     </div>
     
-    
-    
     <style>
         @media (max-width: 768px) {
             nav.nav {
@@ -40,8 +39,11 @@
             }
         }
     </style>
-
     </header>
+
+
+
+
 
 
 
@@ -49,28 +51,15 @@
     <main>
 
 
-
-      <h1 class="inter-font">Ultimate Trios!</h1>
-
-
-
-
-
-
-
-      <!-- Image Slider -->
-      <div class="image-slider">
-        <img
-          src="/image1/Bigfootmain1.png"
-          alt="BigFootBuds Trio pic 1"
-          class="active"
-        />
-        <img src="/image1/Bigfootmain2.png" alt="BigFootBuds Trio pic 2" />
-        <img src="/image1/Bigfootmain3.png" alt="BigFootBuds Trio pic 3" />
-        <!-- Previous and Next buttons -->
-        <button class="slider-button prev" onclick="prevImage()">←</button>
-        <button class="slider-button next" onclick="nextImage()">→</button>
-      </div>
+      <div class="container mt-4">
+        <h1 class="display-4" style="font-family: Arial, Helvetica, sans-serif;">
+            The Ultimate 
+            <span class="badge badge-secondary" style="font-size: 1.25rem; font-family: 'Times New Roman', serif; background-color: black;">New</span>
+        </h1>
+        <h2  class="display-4" style="font-family:Arial, Helvetica, sans-serif;"> Trios</h2> 
+        <h3 class="display-4" style="font-size: 2.25rem; font-family:calc();">$299.99</h3>
+    </div>
+    </div>
 
 
 
@@ -79,57 +68,6 @@
 
 
 
-      <div class="description container mt-4" style="font-family: 'Times New Roman';">
-        <section class="container mt-4 mb-4">
-          <div class="row">
-            <div class="col-md-8 col-lg-6 mx-auto">
-              <h2>Description</h2>
-              <div class="description-content">
-                <p>
-                  The ultimate storage solution for cannabis enthusiasts who demand
-                  both quality and style. Crafted with care and wrapped in durable,
-                  rustic canvas, these jars are designed to keep your cannabis fresh,
-                  potent, and protected.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      
-
-        <hr />
-      
-        <section class="mb-4">
-          <h3>Ingredient 
-            <span onclick="toggle(event, 'ingredient')" class="text-primary" style="cursor: pointer;">+</span>
-          </h3>
-          <div class="description-content">
-            <p class="itemContent ingredient">
-              The ultimate storage solution for cannabis enthusiasts who demand
-              both quality and style.
-            </p>
-          </div>
-        </section>
-      
-        <hr />
-      
-        <section class="mb-4">
-          <h3>Testimonials 
-            <span onclick="toggle(event, 'testimonials')" class="text-primary" style="cursor: pointer;">+</span>
-          </h3>
-          <div class="description-content">
-            <p class="itemContent testimonials">
-              Crafted with care and wrapped in durable, rustic canvas, these jars
-              are designed to keep your cannabis fresh, potent, and protected.
-            </p>
-          </div>
-        </section>
-      
-        <hr />
-      </div>
-      
-      
-      
 
 
 
