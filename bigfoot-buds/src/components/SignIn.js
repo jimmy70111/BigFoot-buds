@@ -4,11 +4,11 @@ import { Clerk } from '@clerk/clerk-js';
 // Directly using the publishable key
 const clerkPubKey = 'pk_test_aW5maW5pdGUtZ2Vja28tODEuY2xlcmsuYWNjb3VudHMuZGV2JA';
 
-const SignUp = () => {
+const SignIn = () => {
   const [clerk, setClerk] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const userButtonRef = useRef(null);
-  const signUpRef = useRef(null);
+  const signInRef = useRef(null);
 
   useEffect(() => {
     const initClerk = async () => {
@@ -25,8 +25,8 @@ const SignUp = () => {
     if (isLoaded) {
       if (clerk.user && userButtonRef.current) {
         clerk.mountUserButton(userButtonRef.current);
-      } else if (!clerk.user && signUpRef.current) {
-        clerk.mountSignUp(signUpRef.current);  // Mount the sign-up component
+      } else if (!clerk.user && signInRef.current) {
+        clerk.mountSignIn(signInRef.current);
       }
     }
   }, [isLoaded, clerk]);
@@ -40,10 +40,10 @@ const SignUp = () => {
       {clerk.user ? (
         <div id="user-button" ref={userButtonRef}></div>
       ) : (
-        <div id="sign-up" ref={signUpRef}></div>  // Updated ID to reflect sign-up
+        <div id="sign-in" ref={signInRef}></div>
       )}
     </div>
   );
 };
 
-export default SignUp;
+export default SignIn;

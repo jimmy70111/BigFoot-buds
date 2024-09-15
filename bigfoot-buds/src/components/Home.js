@@ -18,16 +18,45 @@ const Home = () => {
     fontFamily: 'Arial, Helvetica, sans-serif',
     textDecoration: 'none',
     border: 'none',
-    marginLeft: '80rem',
+    marginLeft: '100rem',
     marginTop: '2rem',
     transition: 'background-color 0.3s',
-    cursor: 'pointer'
-  };
+    cursor: 'pointer',
+    transform: 'translateY(-10px)' // Move the button up
+};
+
+const buttonStyle1 = {
+    display: 'inline-flex',
+    width: '10rem',
+    height: '3rem',
+    borderRadius: '1.5rem',
+    backgroundColor: 'black',
+    color: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    fontSize: '1rem',
+    fontFamily: 'Arial, Helvetica, sans-serif',
+    textDecoration: 'none',
+    border: 'none',
+    marginRight: 'auto',
+    marginLeft: '85rem',
+    transition: 'background-color 0.3s',
+    cursor: 'pointer',
+    transform: 'translateY(-10px)' // Move the button up
+};
+
+ 
+  
+  
 
   return (
     <div>
       <Link to="/signup" style={buttonStyle}>
         Sign Up
+      </Link>
+      <Link to="/signIn" style={buttonStyle1}>
+        Sign In
       </Link>
     </div>
   );
