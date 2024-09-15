@@ -18,11 +18,11 @@ const Home = () => {
     fontFamily: 'Arial, Helvetica, sans-serif',
     textDecoration: 'none',
     border: 'none',
-    marginLeft: '100rem',
-    marginTop: '2rem',
+    marginLeft: '96rem',
+    marginTop: '-1rem',
     transition: 'background-color 0.3s',
     cursor: 'pointer',
-    transform: 'translateY(-10px)' // Move the button up
+    transform: 'translateY(38px)' // Move the button up
 };
 
 const buttonStyle1 = {
