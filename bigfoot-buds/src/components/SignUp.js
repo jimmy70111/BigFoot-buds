@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Clerk } from '@clerk/clerk-js';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 // Directly using the publishable key
 const clerkPubKey = 'pk_test_aW5maW5pdGUtZ2Vja28tODEuY2xlcmsuYWNjb3VudHMuZGV2JA';
@@ -9,6 +10,7 @@ const SignUp = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const userButtonRef = useRef(null);
   const signUpRef = useRef(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     const initClerk = async () => {
@@ -30,6 +32,8 @@ const SignUp = () => {
       }
     }
   }, [isLoaded, clerk]);
+
+ 
 
   if (!isLoaded) {
     return <div>Loading...</div>;

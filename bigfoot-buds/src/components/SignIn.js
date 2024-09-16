@@ -31,6 +31,8 @@ const SignIn = () => {
     }
   }, [isLoaded, clerk]);
 
+
+
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
