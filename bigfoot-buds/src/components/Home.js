@@ -170,59 +170,99 @@ const Home = () => {
     >
       <span>Add to Cart</span>
     </a>
+
+
         </div>
+
+
+
+
         <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-ride="carousel"
-          style={{ width: '30%', height: '100%', margin: 'auto' }}
-        >
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-8 col-md-10 col-12">
-                <ol className="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img
-                      className="d-block w-100"
-                      src= {main1}
-                      alt="First slide"
-                      style={{ objectFit: 'cover' }}
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      className="d-block w-100"
-                      src= {main2}
-                      alt="Second slide"
-                      style={{ objectFit: 'cover' }}
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      className="d-block w-100" 
-                      src= {main3}
-                      alt="Third slide"
-                      style={{ objectFit: 'cover' }}
-                    />
-                  </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
+  id="carouselExampleIndicators"
+  className="carousel slide"
+  data-bs-ride="carousel"
+  style={{ width: '30%', height: '100%', margin: 'auto' }}
+>
+  <div className="container">
+    <div className="row justify-content-center">
+      <div className="col-lg-8 col-md-10 col-12">
+        <ol className="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            className="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              className="d-block w-100"
+              src={main1}
+              alt="First slide"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              className="d-block w-100"
+              src={main2}
+              alt="Second slide"
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              className="d-block w-100"
+              src={main3}
+              alt="Third slide"
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
+        <a
+          className="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </a>
+        <a
+          className="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
         <div style={{ width: '30%' }}>
           <div className="description container mt-4" style={{ fontFamily: "'Times New Roman'" }}>
             <section className="container mt-4 mb-4">
