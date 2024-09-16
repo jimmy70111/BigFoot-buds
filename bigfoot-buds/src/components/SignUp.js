@@ -10,7 +10,6 @@ const SignUp = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const userButtonRef = useRef(null);
   const signUpRef = useRef(null);
-  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     const initClerk = async () => {

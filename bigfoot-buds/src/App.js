@@ -6,13 +6,13 @@ import SignIn from './components/SignIn';
 
 function App() {
   return (
-    <Router>
+  
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Home />} />
         <Route path="/signIn" element={<SignIn />} />
       </Routes>
-    </Router>
+    
   );
 }
 
