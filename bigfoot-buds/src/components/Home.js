@@ -62,11 +62,11 @@ const Home = () => {
     fontFamily: 'Arial, Helvetica, sans-serif',
     textDecoration: 'none',
     border: 'none',
-    marginLeft: '70rem',
+    marginLeft: '75rem',
     marginTop: '-100rem',
     transition: 'background-color 0.3s',
     cursor: 'pointer',
-    transform: 'translateY(38px)' // Move the button up
+    transform: 'translateY(-502px)' // Move the button up
   };
 
   const buttonStyle1 = {
@@ -84,10 +84,10 @@ const Home = () => {
     textDecoration: 'none',
     border: 'none',
     marginRight: 'auto',
-    marginLeft: '50rem',
+    marginLeft: '65rem',
     transition: 'background-color 0.3s',
     cursor: 'pointer',
-    transform: 'translateY(-10px)' // Move the button up
+    transform: 'translateY(-550px)' // Move the button up
   };
 
   return (
