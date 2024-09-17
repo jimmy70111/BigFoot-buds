@@ -21,8 +21,9 @@ body{
   text-align: center;
 }
 
-div button {
+button{
   float: right;
+  margin: 5px;
 }
 
 .flex-item-one{
