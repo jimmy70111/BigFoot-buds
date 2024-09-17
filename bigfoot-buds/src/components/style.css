@@ -15,6 +15,11 @@ body{
 }
 
 
+.active {
+  display: block !important;
+}
+
+
 
 .flex-container {
   display: flex;
