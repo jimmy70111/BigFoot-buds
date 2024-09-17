@@ -158,7 +158,7 @@ const Home = () => {
             </Link>
           </nav>
 
-          <div style={{display: "flex", columnGap: 1 + "rem"}}>
+          <div style={{display: "flex", columnGap: 1.5 + "rem"}}>
             <Link to="/signup" style={buttonStyle}>
               Sign Up
             </Link>
