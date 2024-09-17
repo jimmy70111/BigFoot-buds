@@ -1,18 +1,31 @@
 
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
 .inter-font {
   font-family: "Inter", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 0; /* <weight>: Use a value from 100 to 900 */
-  font-style: normal;
 }
-.description {
-  width: 100%;
-}
-
-.active {
-  display: block !important;
-}
-
 .itemContent {
   display: none;
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
