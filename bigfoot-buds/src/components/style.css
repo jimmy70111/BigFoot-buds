@@ -24,13 +24,27 @@ body{
 .flex-container {
   display: flex;
   flex-direction: row;
-  font-size: 30px;
-  text-align: center;
+  font-size: 25px;
 }
 
 
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+.img-container{
+  width: 60%;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-right: 0%;
+} 
+
+@media (max-width: 800px) {
+  .img-container {
+    margin-left: 18%;
+    margin-top: 2%;
   }
 }
