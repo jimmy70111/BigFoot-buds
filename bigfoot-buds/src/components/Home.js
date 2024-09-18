@@ -55,7 +55,7 @@ const Home = () => {
           margin: "0 5%",
         }}
       >
-        <div class="flex-container">
+        <div className="flex-container">
           <div style={{ width: "auto", marginLeft: "12%" }}>
             <h1
               className="display-4"
@@ -103,7 +103,7 @@ const Home = () => {
             </a>
           </div>
 
-          <div class = "img-container"
+          <div className = "img-container"
             
           >
           <div className="container">
