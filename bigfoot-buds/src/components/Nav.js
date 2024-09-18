@@ -74,7 +74,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
           </Link>
         </nav>
 
-        <div id="clerk-ops">
+        <div id="user-ops">
         <SignedOut>
           <SignInButton id="signin"/>
           <SignUpButton id="signup"/>
