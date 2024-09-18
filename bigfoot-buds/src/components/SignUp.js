@@ -39,7 +39,13 @@ const SignUp = () => {
   }
 
   return (
-    <div id="app">
+    <div id="app"     
+     style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+    }}>
       {clerk.user ? (
         <div id="user-button" ref={userButtonRef}></div>
       ) : (
