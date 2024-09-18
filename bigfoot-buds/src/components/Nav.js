@@ -1,49 +1,10 @@
 import React from "react";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
-const buttonStyle = {
-  display: "inline-flex",
-  width: "10rem",
-  height: "3rem",
-  borderRadius: "1.5rem",
-  backgroundColor: "black",
-  color: "white",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
-  fontSize: "1rem",
-  fontFamily: "Arial, Helvetica, sans-serif",
-  textDecoration: "none",
-  border: "none",
-  // marginLeft: "75rem",
-  // marginTop: "-100rem",
-  transition: "background-color 0.3s",
-  cursor: "pointer",
-  // transform: "translateY(-502px)", // Move the button up
-};
+import { SignedIn, SignedOut, SignInButton, UserButton, SignUpButton} from '@clerk/clerk-react'
+import "./button.css"
 
-const buttonStyle1 = {
-  display: "inline-flex",
-  width: "10rem",
-  height: "3rem",
-  borderRadius: "1.5rem",
-  backgroundColor: "black",
-  color: "white",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
-  fontSize: "1rem",
-  fontFamily: "Arial, Helvetica, sans-serif",
-  textDecoration: "none",
-  border: "none",
-  // marginRight: "auto",
-  // marginLeft: "65rem",
-  transition: "background-color 0.3s",
-  cursor: "pointer",
-  // transform: "translateY(-550px)", // Move the button up
-};
-
-const Nav = () => {
+const Nav = ({ userButtonRef, clerkInstance }) => {
   return (
     <header>
       <div className="container my-4 d-flex align-items-center">
@@ -113,14 +74,16 @@ const Nav = () => {
           </Link>
         </nav>
 
-        <div style={{ display: "flex", columnGap: 1.5 + "rem" }}>
-          <Link to="/signup" style={buttonStyle}>
-            Sign Up
-          </Link>
-          <Link to="/signIn" style={buttonStyle1}>
-            Sign In
-          </Link>
+        <div id="clerk-ops">
+        <SignedOut>
+          <SignInButton id="signin"/>
+          <SignUpButton id="signup"/>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
         </div>
+
       </div>
     </header>
   );

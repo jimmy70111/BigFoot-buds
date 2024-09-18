@@ -1,0 +1,23 @@
+#clerk-ops {
+  display: inline-flex;
+  column-gap: 1rem;
+}
+
+#signin,
+#signup {
+  display: inline-flex;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: one;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
