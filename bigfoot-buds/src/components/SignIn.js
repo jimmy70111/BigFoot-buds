@@ -52,7 +52,6 @@ const SignIn = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
       }}
     >
       {clerk.user ? (
