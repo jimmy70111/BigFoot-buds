@@ -30,7 +30,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
           </Link>
           <Link
             className="nav-link"
-            to="/pages/hybrid"
+            to="/hybrid"
             style={{
               color: "black",
               fontSize: "20px",
@@ -41,7 +41,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
           </Link>
           <Link
             className="nav-link"
-            to="/pages/sativa"
+            to="/sativa"
             style={{
               color: "black",
               fontSize: "20px",
@@ -52,7 +52,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
           </Link>
           <Link
             className="nav-link"
-            to="/pages/indica"
+            to="/indica"
             style={{
               color: "black",
               fontSize: "20px",
@@ -63,7 +63,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
           </Link>
           <Link
             className="nav-link"
-            to="/pages/contact"
+            to="/contact"
             style={{
               color: "black",
               fontSize: "20px",

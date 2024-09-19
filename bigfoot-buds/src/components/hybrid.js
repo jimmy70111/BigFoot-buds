@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import main from "../images/main.JPG";
+import hybrid1 from "../images/hybrid1.jpg";
+import hybrid2 from "../images/hybrid2.jpg";
+import hybrid3 from "../images/hybrid3.jpg";
+
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import $ from "jquery"; // Import jQuery
@@ -9,7 +12,7 @@ import "bootstrap/dist/js/bootstrap.min"; // Import Bootstrap JS
 
 import "./style.css";
 
-const Home = () => {
+const Hybrid = () => {
   const [showSignUp, setShowSignUp] = useState(false);
 
   const toggle = (event, contentClass) => {
@@ -60,13 +63,13 @@ const Home = () => {
               className="display-4"
               style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
             >
-              The Ultimate
+              Hybrid
             </h1>
             <h2
               className="display-4"
               style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
             >
-              Trios <span
+               <span
                 className="badge badge-secondary"
                 style={{
                   fontSize: "1.25rem",
@@ -85,7 +88,7 @@ const Home = () => {
                 fontFamily: "Arial, Helvetica, sans-serif",
               }}
             >
-              $299.99
+              $99.99
             </h3>
             <h4 style={{ visibility: "hidden" }}>&nbsp;</h4>
             <h5
@@ -103,12 +106,59 @@ const Home = () => {
           </div>
 
 
-          <div className="img-container" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "20rem" }}>
-  <img
-    src={main}
-    alt="Main image"
-    style={{ maxWidth: "100%", height: "15rem", objectFit: "cover",  }}
-  />
+          <div className="img-container">
+  <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+    <div className="carousel-inner">
+      <div className="carousel-item active">
+        <img
+          className="d-block w-100"
+          src={hybrid1}
+          alt="First slide"
+          style={{ objectFit: "cover", height: "auto", width: "auto" }}
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          className="d-block w-100"
+          src={hybrid2}
+          alt="Second slide"
+          style={{ objectFit: "cover", height: "auto", width: "auto" }}
+        />
+      </div>
+      <div className="carousel-item">
+        <img
+          className="d-block w-100"
+          src={hybrid3}
+          alt="Third slide"
+          style={{ objectFit: "cover", height: "auto", width: "auto" }}
+        />
+      </div>
+    </div>
+    <a
+      className="carousel-control-prev"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-bs-slide="prev"
+    >
+      <span
+        className="carousel-control-prev-icon"
+        aria-hidden="true"
+      ></span>
+      <span className="visually-hidden">Previous</span>
+    </a>
+    <a
+      className="carousel-control-next"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-bs-slide="next"
+    >
+      <span
+        className="carousel-control-next-icon"
+        aria-hidden="true"
+      ></span>
+      <span className="visually-hidden">Next</span>
+    </a>
+  </div>
 </div>
 
 
@@ -180,4 +230,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hybrid;
