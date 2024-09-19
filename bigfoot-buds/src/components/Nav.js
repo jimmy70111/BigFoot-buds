@@ -1,8 +1,14 @@
 import React from "react";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
-import { SignedIn, SignedOut, SignInButton, UserButton, SignUpButton } from '@clerk/clerk-react'
-import "./button.css"
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+  SignUpButton,
+} from "@clerk/clerk-react";
+import "./button.css";
 
 const Nav = ({ userButtonRef, clerkInstance }) => {
   return (
@@ -75,16 +81,15 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
             </Link>
           </nav>
         </div>
-        <div className="signInOrOut-container">
-          <div id="user-ops">
-            <SignedOut>
-              <SignInButton id="signin" />
-              <SignUpButton id="signup" />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </div>
+
+        <div id="user-ops">
+          <SignedOut>
+            <SignInButton id="signin" />
+            <SignUpButton id="signup" />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </header>

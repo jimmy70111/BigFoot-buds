@@ -1,6 +1,10 @@
 #user-ops {
   display: inline-flex;
   column-gap: 1rem;
+  /* max-width: 3.5rem; */
+}
+
+.cl-internal-nfscg9 {
   max-width: 3.5rem;
 }
 
