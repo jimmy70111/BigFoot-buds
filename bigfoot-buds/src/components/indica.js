@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import indica1 from "../images/indica1.jpg";
+import indica4 from "../images/indica4.jpg";
 import indica2 from "../images/indica2.jpg";
 import indica3 from "../images/indca3.jpg";
 
