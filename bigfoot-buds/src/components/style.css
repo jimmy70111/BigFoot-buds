@@ -24,7 +24,8 @@ body{
 .flex-container {
   display: flex;
   flex-direction: row;
-  font-size: 25px;
+  font-size: 22px;
+  
 }
 
 
@@ -32,19 +33,43 @@ body{
   .flex-container {
     flex-direction: column;
     text-align: center;
+    font-size: 22px;
+  }
+}
+/*style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "20rem" }}*/
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-right: 5%;
+} 
+
+@media (max-width: 900px) {
+  .img-container {
+    margin-left: 2%;
+    margin-top: 2%;
   }
 }
 
-.img-container{
-  width: 60%;
-  margin-left: 3%;
-  margin-top: 2%;
-  margin-right: 0%;
-} 
+.logo-container{
+  margin-left: 4%;
+}
 
-@media (max-width: 800px) {
-  .img-container {
-    margin-left: 18%;
-    margin-top: 2%;
-  }
+.signInOrOut-container{
+  margin-right: 10%;
+}
+
+.item-container{
+  width: auto;
+  margin-left: 0%;
+  
+}
+
+.nav-container{
+  margin-left: auto;
+  margin-right: auto;
 }

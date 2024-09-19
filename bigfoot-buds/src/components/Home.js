@@ -43,7 +43,7 @@ const Home = () => {
     transition: "background-color 0.3s", // Smooth hover effect
   };
 
- 
+
 
   return (
     <div>
@@ -55,126 +55,127 @@ const Home = () => {
         }}
       >
         <div className="flex-container">
-          <div style={{ width: "auto", marginLeft: "12%" }}>
-            <h1
-              className="display-4"
-              style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
-            >
-              The Ultimate
-            </h1>
-            <h2
-              className="display-4"
-              style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
-            >
-              Trios <span
-                className="badge badge-secondary"
+          <div className="item-container">
+            
+              <h1
+                className="display-4"
+                style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
+              >
+                The Ultimate
+              </h1>
+              <h2
+                className="display-4"
+                style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
+              >
+                Trios <span
+                  className="badge badge-secondary"
+                  style={{
+                    fontSize: "1.25rem",
+                    fontFamily: "'Times New Roman', serif",
+                    backgroundColor: "black",
+                  }}
+                >
+                  New
+                </span>
+              </h2>
+
+              <h3
+                className="display-4"
                 style={{
-                  fontSize: "1.25rem",
-                  fontFamily: "'Times New Roman', serif",
-                  backgroundColor: "black",
+                  fontSize: "2.25rem",
+                  fontFamily: "Arial, Helvetica, sans-serif",
                 }}
               >
-                New
-              </span>
-            </h2>
+                $299.99
+              </h3>
+              <h4 style={{ visibility: "hidden" }}>&nbsp;</h4>
+              <h5
+                className="display-4"
+                style={{
+                  fontFamily: "'Times New Roman', Times, serif",
+                  fontSize: "1.25rem",
+                }}
+              >
+                Featuring all three signature flavors in one exclusive collection
+              </h5>
+              <a href="https://example.com" style={linkStyle}>
+                <span>Add to Cart</span>
+              </a>
+            
+          </div>
 
-            <h3
-              className="display-4"
-              style={{
-                fontSize: "2.25rem",
-                fontFamily: "Arial, Helvetica, sans-serif",
-              }}
-            >
-              $299.99
-            </h3>
-            <h4 style={{ visibility: "hidden" }}>&nbsp;</h4>
-            <h5
-              className="display-4"
-              style={{
-                fontFamily: "'Times New Roman', Times, serif",
-                fontSize: "1.25rem",
-              }}
-            >
-              Featuring all three signature flavors in one exclusive collection
-            </h5>
-            <a href="https://example.com" style={linkStyle}>
-              <span>Add to Cart</span>
-            </a>
+          <div className="img-container" >
+            <img
+              src={main}
+              alt="Main image"
+              style={{ maxWidth: "100%", height: "15rem", objectFit: "cover", }}
+            />
           </div>
 
 
-          <div className="img-container" style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "20rem" }}>
-  <img
-    src={main}
-    alt="Main image"
-    style={{ maxWidth: "100%", height: "15rem", objectFit: "cover",  }}
-  />
-</div>
 
-
-
-        <div style={{ width: "auto"}}>
-          <div
-            className="description container mt-4"
-            style={{ fontFamily: "'Times New Roman'" }}
-          >
-            <section className="mt-4 mb-4">
-              <div>
+          <div style={{ width: "auto" }}>
+            <div
+              className="description container mt-4"
+              style={{ fontFamily: "'Times New Roman'" }}
+            >
+              <section className="mt-4 mb-4">
                 <div>
-                  <h2>Description</h2>
-                  <div className="description-content">
-                    <p>
-                      The ultimate storage solution for cannabis enthusiasts who
-                      demand both quality and style. Crafted with care and
-                      wrapped in durable, rustic canvas, these jars are designed
-                      to keep your cannabis fresh, potent, and protected.
-                    </p>
+                  <div>
+                    <h2>Description</h2>
+                    <div className="description-content">
+                      <p>
+                        The ultimate storage solution for cannabis enthusiasts who
+                        demand both quality and style. Crafted with care and
+                        wrapped in durable, rustic canvas, these jars are designed
+                        to keep your cannabis fresh, potent, and protected.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <hr />
-            <section className="mb-4">
-              <h3>
-                Ingredient&nbsp;
-                <span
-                  onClick={(e) => toggle(e, "ingredient")}
-                  className="text-primary"
-                  style={{ cursor: "pointer" }}
-                >
-                  +
-                </span>
-              </h3>
-              <div className="description-content">
-                <p className="itemContent ingredient">
-                  The ultimate storage solution for cannabis enthusiasts who
-                  demand both quality and style.
-                </p>
-              </div>
-            </section>
-            <hr />
-            <section className="mb-4">
-              <h3>
-                Testimonials&nbsp;
-                <span
-                  onClick={(e) => toggle(e, "testimonials")}
-                  className="text-primary"
-                  style={{ cursor: "pointer" }}
-                >
-                  +
-                </span>
-              </h3>
-              <div className="description-content">
-                <p className="itemContent testimonials">
-                  Crafted with care and wrapped in durable, rustic canvas, these
-                  jars are designed to keep your cannabis fresh, potent, and
-                  protected.
-                </p>
-              </div>
-            </section>
+              </section>
+              <hr />
+              <section className="mb-4">
+                <h3>
+                  Ingredient&nbsp;
+                  <span
+                    onClick={(e) => toggle(e, "ingredient")}
+                    className="text-primary"
+                    style={{ cursor: "pointer" }}
+                  >
+                    +
+                  </span>
+                </h3>
+                <div className="description-content">
+                  <p className="itemContent ingredient">
+                    The ultimate storage solution for cannabis enthusiasts who
+                    demand both quality and style.
+                  </p>
+                </div>
+              </section>
+              <hr />
+              <section className="mb-4">
+                <h3>
+                  Testimonials&nbsp;
+                  <span
+                    onClick={(e) => toggle(e, "testimonials")}
+                    className="text-primary"
+                    style={{ cursor: "pointer" }}
+                  >
+                    +
+                  </span>
+                </h3>
+                <div className="description-content">
+                  <p className="itemContent testimonials">
+                    Crafted with care and wrapped in durable, rustic canvas, these
+                    jars are designed to keep your cannabis fresh, potent, and
+                    protected.
+                  </p>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
-    </div>
       </main >
     </div >
   );
