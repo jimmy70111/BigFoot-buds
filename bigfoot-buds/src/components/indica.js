@@ -112,7 +112,7 @@ const  Indica = () => {
       <div className="carousel-item active">
         <img
           className="d-block w-100"
-          src={indica1}
+          src={indica4}
           alt="First slide"
           style={{ objectFit: "cover", height: "auto", width: "auto" }}
         />
