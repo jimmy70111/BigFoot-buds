@@ -69,7 +69,6 @@ body{
   
 }
 
-.nav-container{
-  margin-left: auto;
-  margin-right: auto;
+.d-flex {
+  justify-content: space-around;
 }
