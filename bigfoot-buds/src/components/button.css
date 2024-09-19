@@ -4,6 +4,15 @@
   /* max-width: 3.5rem; */
 }
 
+@media (max-width: 900px) {
+  #user-ops {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 0.25rem;
+    margin-right: 5%;
+  }
+}
+
 .cl-internal-nfscg9 {
   max-width: 3.5rem;
 }

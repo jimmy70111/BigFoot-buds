@@ -57,17 +57,10 @@ const Home = () => {
         <div className="flex-container">
           <div className="item-container">
             
-              <h1
-                className="display-4"
-                style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
-              >
-                The Ultimate
+              <h1>
+                The Ultimate Trios
               </h1>
-              <h2
-                className="display-4"
-                style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
-              >
-                Trios <span
+                 <span
                   className="badge badge-secondary"
                   style={{
                     fontSize: "1.25rem",
@@ -77,7 +70,6 @@ const Home = () => {
                 >
                   New
                 </span>
-              </h2>
 
               <h3
                 className="display-4"
@@ -108,7 +100,7 @@ const Home = () => {
             <img
               src={main}
               alt="Main image"
-              style={{ maxWidth: "100%", height: "15rem", objectFit: "cover", }}
+              style={{ height: "15rem", objectFit: "cover", }}
             />
           </div>
 

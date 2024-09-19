@@ -81,15 +81,16 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
             </Link>
           </nav>
         </div>
-
-        <div id="user-ops">
-          <SignedOut>
-            <SignInButton id="signin" />
-            <SignUpButton id="signup" />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
+        <div className="flex-container">
+          <div id="user-ops">
+            <SignedOut>
+              <SignInButton id="signin" />
+              <SignUpButton id="signup" />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
         </div>
       </div>
     </header>
