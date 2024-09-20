@@ -38,14 +38,16 @@ const  Sativa = () => {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    fontSize: "1rem", // Adjust font size as needed
-    fontFamily: "Arial, Helvetica, sans-serif", // Apply specific font
+    fontSize: "1.2rem", // Adjust font size as needed
     textDecoration: "none", // Removes underline from link
     border: "none", // Removes default border
     marginLeft: "10rem", // Adjust positioning as needed
     marginTop: "2rem", // Adjust positioning as needed
     transition: "background-color 0.3s", // Smooth hover effect
+    fontFamily: "'Bodoni MT', Bodoni, serif", // Updated font family
+
   };
+
 
  
 
@@ -89,7 +91,7 @@ const  Sativa = () => {
                 fontFamily: "Arial, Helvetica, sans-serif",
               }}
             >
-              $99.99
+              $299.99
             </h3>
             <h4 style={{ visibility: "hidden" }}>&nbsp;</h4>
             <h5
@@ -102,7 +104,7 @@ const  Sativa = () => {
               Featuring all three signature flavors in one exclusive collection
             </h5>
             <a href="https://example.com" style={linkStyle}>
-              <span>Add to Cart</span>
+              <span>Wholesales</span>
             </a>
           </div>
 

@@ -39,7 +39,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               className="nav-link"
               to="/hybrid"
               style={{
-                color: "black",
+                color: "rgb(139, 202, 223)",
                 fontSize: "20px",
                 fontFamily: "'Times New Roman', serif",
               }}
@@ -50,7 +50,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               className="nav-link"
               to="/sativa"
               style={{
-                color: "black",
+                color: "rgb(255, 230, 0) " , 
                 fontSize: "20px",
                 fontFamily: "'Times New Roman', serif",
               }}
@@ -61,7 +61,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               className="nav-link"
               to="/indica"
               style={{
-                color: "black",
+                color: "rgb(250, 142, 160)",
                 fontSize: "20px",
                 fontFamily: "'Times New Roman', serif",
               }}
