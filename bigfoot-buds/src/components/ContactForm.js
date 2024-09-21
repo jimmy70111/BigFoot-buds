@@ -37,10 +37,9 @@ const ContactForm = () => {
         Message: ${formData.message}
       `;
 
-      emailjs.send('service_z050ph1', 'template_rj26q2u', {
-        to_email: 'jimmyjiang70@gmail.com',
+      emailjs.send('service_8d2mm58', 'template_c3g1rwj', {
         message: formattedMessage,
-      }, 'KNa8m87MKK_f7Ypha')
+      }, 'fNtODhH35P3m2W_Tj')
       .then(() => {
         alert('Message sent successfully!');
       })
