@@ -52,11 +52,13 @@ const ContactForm = () => {
   };
 
   return (
+
+    
     <form className={`needs-validation ${validated ? 'was-validated' : ''}`} noValidate onSubmit={handleSubmit}>
 
 
-      <div className="form-row">
-        <div className="col-md-4 mb-3">
+      <div className="d-flex justify-content-center mb-3">
+        <div className="col-md-6 mb-3">
           <label htmlFor="location">Location</label>
           <input
             type="text"
@@ -71,7 +73,7 @@ const ContactForm = () => {
         </div>
 
 
-        <div className="col-md-4 mb-3">
+        <div className="col-md-6 mb-3">
           <label htmlFor="subject">Subject</label>
           <input
             type="text"
@@ -86,7 +88,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="form-row">
+      <div className="d-flex justify-content-center mb-3">
         <div className="col-md-6 mb-3">
           <label htmlFor="firstName">First Name</label>
           <input
@@ -119,7 +121,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="form-row">
+      <div className="d-flex justify-content-center mb-3">
         <div className="col-md-6 mb-3">
           <label htmlFor="email">Email Address</label>
           <input
