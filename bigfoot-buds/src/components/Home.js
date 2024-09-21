@@ -107,7 +107,7 @@ const Home = () => {
 
 
 
-          <div style={{ width: "auto" }}>
+          <div style={{ width: "auto", marginRight: "5%"}}>
             <div
               className="description container mt-4"
               style={{ fontFamily: "'Times New Roman'" }}
