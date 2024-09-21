@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import main from "../images/main.JPG";
+import { Link } from 'react-router-dom'; 
+
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import $ from "jquery"; // Import jQuery
@@ -91,9 +93,9 @@ const Home = () => {
               >
                 Featuring all three signature flavors in one exclusive collection
               </h5>
-              <a href="https://example.com" style={linkStyle}>
-                <span>Wholesales</span>
-              </a>
+              <Link to="/form" style={linkStyle}>
+        <span>Wholesales</span>
+      </Link>
             
           </div>
 

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import sativa1 from "../images/sativa1.jpg";
 import sativa2 from "../images/sativa2.jpg";
 import sativa3 from "../images/sativa3.jpg";
+import { Link } from 'react-router-dom'; 
 
 
 
@@ -103,9 +104,9 @@ const  Sativa = () => {
             >
               Featuring all three signature flavors in one exclusive collection
             </h5>
-            <a href="https://example.com" style={linkStyle}>
-              <span>Wholesales</span>
-            </a>
+            <Link to="/form" style={linkStyle}>
+        <span>Wholesales</span>
+      </Link>
           </div>
 
 

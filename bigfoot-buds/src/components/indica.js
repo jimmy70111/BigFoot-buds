@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import indica4 from "../images/indica4.jpg";
 import indica2 from "../images/indica2.jpg";
 import indica3 from "../images/indca3.jpg";
+import { Link } from 'react-router-dom'; 
+
 
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
@@ -100,9 +102,9 @@ const  Indica = () => {
             >
               Featuring all three signature flavors in one exclusive collection
             </h5>
-            <a href="https://example.com" style={linkStyle}>
-              <span>Wholesales</span>
-            </a>
+            <Link to="/form" style={linkStyle}>
+        <span>Wholesales</span>
+      </Link>
           </div>
 
 

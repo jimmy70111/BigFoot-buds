@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import hybrid1 from "../images/hybrid1.jpg";
 import hybrid2 from "../images/hybrid2.jpg";
 import hybrid3 from "../images/hybrid3.jpg";
+import { Link } from 'react-router-dom'; 
 
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
@@ -100,9 +101,9 @@ const Hybrid = () => {
             >
               Featuring all three signature flavors in one exclusive collection
             </h5>
-            <a href="https://example.com" style={linkStyle}>
-              <span>Wholesales</span>
-            </a>
+            <Link to="/form" style={linkStyle}>
+        <span>Wholesales</span>
+      </Link>
           </div>
 
 

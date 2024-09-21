@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   
-  background-image: url(plantpic.jpg);
+  /* background-image: url(plantpic.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
