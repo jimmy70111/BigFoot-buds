@@ -7,6 +7,7 @@ import Contact from "./components/contact";
 import Hybrid from "./components/hybrid"; 
 import Sativa from "./components/sativa"; 
 import Indica from "./components/indica"; 
+import Form from "./components/ContactForm";
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/hybrid" element={<Hybrid />} /> 
           <Route path="/sativa" element={<Sativa />} /> 
           <Route path="/indica" element={<Indica />} /> 
+          <Route path="/form" element={<Form />} /> 
 
         </Routes>
       </main>
