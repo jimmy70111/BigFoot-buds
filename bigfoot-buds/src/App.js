@@ -8,13 +8,14 @@ import Hybrid from "./components/hybrid";
 import Sativa from "./components/sativa"; 
 import Indica from "./components/indica"; 
 import Form from "./components/ContactForm";
+import Background  from "./components/background";
 
 
 
 
 function App() {
   return (
-    <>
+    <>  
       <Nav />
       <main>
         <Routes>
@@ -28,6 +29,7 @@ function App() {
 
         </Routes>
       </main>
+      <Background/>
     </>
   );
 }
