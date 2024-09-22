@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Removed Form import
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom"; // Added useLocation
 import Home from "./components/Home";
 import CheckoutForm from "./components/CheckoutForm";
 import Nav from "./components/Nav";
@@ -8,12 +8,11 @@ import Hybrid from "./components/hybrid";
 import Sativa from "./components/sativa"; 
 import Indica from "./components/indica"; 
 import Form from "./components/ContactForm";
-import Background  from "./components/background";
-
-
-
+import Background from "./components/background";
 
 function App() {
+  const location = useLocation(); // Get the current location
+
   return (
     <>  
       <Nav />
@@ -26,10 +25,10 @@ function App() {
           <Route path="/sativa" element={<Sativa />} /> 
           <Route path="/indica" element={<Indica />} /> 
           <Route path="/form" element={<Form />} /> 
-
         </Routes>
       </main>
-      <Background/>
+      {/* Render Background only if the current path is not "/contact" */}
+      {location.pathname !== '/contact' && <Background />}
     </>
   );
 }
