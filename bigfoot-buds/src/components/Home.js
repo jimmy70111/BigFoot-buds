@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import main from "../images/main.JPG";
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
@@ -59,57 +59,56 @@ const Home = () => {
       >
         <div className="flex-container">
           <div className="item-container">
-            
-              <h1>
-                The Ultimate Exotic Trios
-              </h1>
-                 <span
-                  className="badge badge-secondary"
-                  style={{
-                    fontSize: "1.25rem",
-                    fontFamily: "'Times New Roman', serif",
-                    backgroundColor: "black",
-                  }}
-                >
-                  New
-                </span>
 
-              <h3
-                className="display-4"
-                style={{
-                  fontSize: "2.25rem",
-                  fontFamily: "Arial, Helvetica, sans-serif",
-                }}
-              >
-                $899.99
-              </h3>
-              <h4 style={{ visibility: "hidden" }}>&nbsp;</h4>
-              <h5
-                className="display-4"
-                style={{
-                  fontFamily: "'Times New Roman', Times, serif",
-                  fontSize: "1.25rem",
-                }}
-              >
-                Featuring all three signature flavors in one exclusive collection
-              </h5>
-              <Link to="/form" style={linkStyle}>
-        <span>Wholesales</span>
-      </Link>
-            
+            <h1>
+              The Ultimate Exotic Trios
+            </h1>
+            <span
+              className="badge badge-secondary"
+              style={{
+                fontSize: "1.25rem",
+                fontFamily: "'Times New Roman', serif",
+                backgroundColor: "black",
+              }}
+            >
+              New
+            </span>
+
+            <h3
+              className="display-4"
+              style={{
+                fontSize: "2.25rem",
+                fontFamily: "Arial, Helvetica, sans-serif",
+              }}
+            >
+              $899.99
+            </h3>
+            <h4 style={{ visibility: "hidden" }}>&nbsp;</h4>
+            <h5
+              className="display-4"
+              style={{
+                fontFamily: "'Times New Roman', Times, serif",
+                fontSize: "1.25rem",
+              }}
+            >
+              Featuring all three signature flavors in one exclusive collection
+            </h5>
+            <Link to="/form" style={linkStyle}>
+              <span>Wholesales</span>
+            </Link>
+
           </div>
 
           <div className="img-container" >
             <img
               src={main}
               alt="Main image"
-              style={{ height: "15rem", objectFit: "cover", }}
+              style={{width:"50%"}}
             />
           </div>
 
 
-
-          <div style={{ width: "auto", marginRight: "5%"}}>
+          <div className="description-container">
             <div
               className="description container mt-4"
               style={{ fontFamily: "'Times New Roman'" }}
