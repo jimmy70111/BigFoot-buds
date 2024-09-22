@@ -13,17 +13,17 @@ import "./button.css";
 const Nav = ({ userButtonRef, clerkInstance }) => {
   return (
     <header>
-      <div className="d-flex align-items-center">
-        <div className="logo-container">
+      <div className="d-flex align-items-center  ">
+        <div className="logo-container ">
           <img
             src={logo}
             className="img-fluid"
             alt="Logo"
-            style={{ width: "160px", height: "auto" }}
+            style={{ width: "160px", height: "auto", }}
           />
         </div>
-        <div className="nav-container">
-          <nav className="nav justify-content-center">
+        <div className="nav-container  ">
+          <nav className="nav justify-content-center ">
             <Link
               className="nav-link active"
               to="/"
@@ -81,7 +81,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
             </Link>
           </nav>
         </div>
-        <div className="flex-container">
+        <div className="col-auto">
           <div id="user-ops">
             <SignedOut>
               <SignInButton id="signin" />
