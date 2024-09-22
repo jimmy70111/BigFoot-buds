@@ -67,7 +67,7 @@ const Home = () => {
               className="badge badge-secondary"
               style={{
                 fontSize: "1.25rem",
-                fontFamily: "'Times New Roman', serif",
+                fontFamily: "Arial, Helvetica, sans-serif",
                 backgroundColor: "black",
               }}
             >
@@ -87,7 +87,7 @@ const Home = () => {
             <h5
               className="display-4"
               style={{
-                fontFamily: "'Times New Roman', Times, serif",
+                fontFamily: "Arial, Helvetica, sans-serif",
                 fontSize: "1.25rem",
               }}
             >
@@ -109,12 +109,12 @@ const Home = () => {
           </div>
 
 
-          <div className="description-container">
+          <div className="flex-container">
             <div
-              className="description container mt-4"
-              style={{ fontFamily: "'Times New Roman'" }}
+              className="description container mt-5"
+              style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
             >
-              <section className="mt-4 mb-4">
+              <section className="mt-4 mb-2">
                 <div>
                   <div>
                     <h2>Description</h2>
