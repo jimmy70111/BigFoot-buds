@@ -56,8 +56,8 @@ const ContactForm = () => {
     <form className={`needs-validation ${validated ? 'was-validated' : ''}`} noValidate onSubmit={handleSubmit}>
 
 
-      <div className="d-flex justify-content-center mb-3">
-        <div className="col-md-6 mb-3">
+      <div className="d-flex justify-content-center ">
+        <div className="col-md-5 mb-3 me-3 ">
           <label htmlFor="location">Location</label>
           <input
             type="text"
@@ -72,7 +72,7 @@ const ContactForm = () => {
         </div>
 
 
-        <div className="col-md-6 mb-3">
+        <div className="col-md-5 mb-3  ">
           <label htmlFor="subject">Subject</label>
           <input
             type="text"
@@ -88,7 +88,7 @@ const ContactForm = () => {
       </div>
 
       <div className="d-flex justify-content-center mb-3">
-        <div className="col-md-6 mb-3">
+        <div className="col-md-5 mb-3 me-3">
           <label htmlFor="firstName">First Name</label>
           <input
             type="text"
@@ -103,7 +103,7 @@ const ContactForm = () => {
 
           <div className="invalid-feedback">Please provide your first name.</div>
         </div>
-        <div className="col-md-6 mb-3">
+        <div className="col-md-5 mb-3">
           <label htmlFor="lastName">Last Name</label>
           <input
             type="text"
@@ -121,7 +121,7 @@ const ContactForm = () => {
       </div>
 
       <div className="d-flex justify-content-center mb-3">
-        <div className="col-md-6 mb-3">
+        <div className="col-md-5 mb-3 me-3">
           <label htmlFor="email">Email Address</label>
           <input
             type="email"
@@ -134,7 +134,7 @@ const ContactForm = () => {
           />
           <div className="invalid-feedback">Please provide a valid email address.</div>
         </div>
-        <div className="col-md-6 mb-3">
+        <div className="col-md-5 mb-3">
           <label htmlFor="phoneNumber">Phone Number</label>
           <input
             type="text"
@@ -147,8 +147,8 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="form-row">
-        <div className="col-md-12 mb-3">
+      <div className=" d-flex justify-content-center">
+        <div className="col-md-11 mb-3 me-4 ">
           <label htmlFor="message">Message</label>
           <textarea
             className="form-control"
@@ -164,7 +164,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <button className="btn btn-primary" type="submit">Send Message</button>
+      <button className="btn btn-primary mb-3 ms-5" type="submit">Send Message</button>
     </form>
   );
 };
