@@ -9,12 +9,13 @@ import Sativa from "./components/sativa";
 import Indica from "./components/indica"; 
 import Form from "./components/ContactForm";
 import Background from "./components/background";
-
+import AgeVerificationModal from "./components/AgeVerificationModal";
 function App() {
   const location = useLocation(); // Get the current location
 
   return (
     <>  
+    <AgeVerificationModal/>
       <Nav />
       <main>
         <Routes>

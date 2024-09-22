@@ -165,7 +165,7 @@ const Hybrid = () => {
 
 
 
-          <div className="flex-container">
+          <div className="description-container">
             <div
               className="description container mt-4"
               style={{                 fontFamily: "'Arial', sans-serif",
