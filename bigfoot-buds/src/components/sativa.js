@@ -5,8 +5,6 @@ import sativa2 from "../images/sativa2.jpg";
 import sativa3 from "../images/sativa3.jpg";
 import { Link } from 'react-router-dom';
 
-
-
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import $ from "jquery"; // Import jQuery
 import Popper from "popper.js"; // Import Popper.js
@@ -29,6 +27,7 @@ const Sativa = () => {
     // Update symbol to represent the state
     event.target.innerHTML = event.target.innerHTML === "+" ? "-" : "+";
   };
+
   const linkStyle = {
     display: "inline-flex", // Aligns items in a flex container
     width: "10rem", // Adjust width as needed
@@ -45,12 +44,8 @@ const Sativa = () => {
     marginLeft: "10rem", // Adjust positioning as needed
     marginTop: "2rem", // Adjust positioning as needed
     transition: "background-color 0.3s", // Smooth hover effect
-    fontFamily: "'Bodoni MT', Bodoni, serif", // Updated font family
-
+    fontFamily: "'Arial', sans-serif", // Updated font family to Arial
   };
-
-
-
 
   return (
     <div>
@@ -78,7 +73,7 @@ const Sativa = () => {
                   className="badge badge-secondary"
                   style={{
                     fontSize: "1.25rem",
-                    fontFamily: "'Times New Roman', serif",
+                    fontFamily: "'Arial', sans-serif", // Changed from Times New Roman
                     backgroundColor: "black",
                   }}
                 >
@@ -99,7 +94,7 @@ const Sativa = () => {
               <h5
                 className="display-4"
                 style={{
-                  fontFamily: "'Times New Roman', Times, serif",
+                  fontFamily: "'Arial', sans-serif", // Changed from Times New Roman
                   fontSize: "1.25rem",
                 }}
               >
@@ -110,7 +105,6 @@ const Sativa = () => {
               </Link>
             </div>
           </div>
-
 
           <div className="img-container">
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -165,12 +159,12 @@ const Sativa = () => {
             </div>
           </div>
 
-
-
           <div className="description-container">
             <div
               className="description container mt-4"
-              style={{ fontFamily: "'Times New Roman'" }}
+              style={{ fontFamily: "'Arial', sans-serif"
+                
+               }} // Changed from Times New Roman
             >
               <section className="mt-4 mb-4">
                 <div>
@@ -229,8 +223,8 @@ const Sativa = () => {
             </div>
           </div>
         </div>
-      </main >
-    </div >
+      </main>
+    </div>
   );
 };
 

@@ -30,7 +30,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               style={{
                 color: "black",
                 fontSize: "20px",
-                fontFamily: "'Times New Roman', serif",
+                fontFamily: "'Arial', sans-serif",
               }}
             >
               Home
@@ -41,7 +41,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               style={{
                 color: "rgb(139, 202, 223)",
                 fontSize: "20px",
-                fontFamily: "'Times New Roman', serif",
+                fontFamily: "'Arial', sans-serif",
               }}
             >
               Hybrid
@@ -52,7 +52,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               style={{
                 color: "rgb(255, 230, 0) " , 
                 fontSize: "20px",
-                fontFamily: "'Times New Roman', serif",
+                fontFamily: "'Arial', sans-serif",
               }}
             >
               Sativa
@@ -63,7 +63,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               style={{
                 color: "rgb(250, 142, 160)",
                 fontSize: "20px",
-                fontFamily: "'Times New Roman', serif",
+                fontFamily: "'Arial', sans-serif",
               }}
             >
               Indica
@@ -74,7 +74,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               style={{
                 color: "black",
                 fontSize: "20px",
-                fontFamily: "'Times New Roman', serif",
+                fontFamily: "'Arial', sans-serif",
               }}
             >
               Contact

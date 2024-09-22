@@ -74,7 +74,8 @@ const Hybrid = () => {
                 className="badge badge-secondary"
                 style={{
                   fontSize: "1.25rem",
-                  fontFamily: "'Times New Roman', serif",
+                  fontFamily: "'Arial', sans-serif",
+                  
                   backgroundColor: "black",
                 }}
               >
@@ -95,7 +96,7 @@ const Hybrid = () => {
             <h5
               className="display-4"
               style={{
-                fontFamily: "'Times New Roman', Times, serif",
+                fontFamily: "'Arial', sans-serif",
                 fontSize: "1.25rem",
               }}
             >
@@ -167,7 +168,11 @@ const Hybrid = () => {
           <div className="description-container">
             <div
               className="description container mt-4"
-              style={{ fontFamily: "'Times New Roman'" }}
+              style={{                 fontFamily: "'Arial', sans-serif",
+
+
+
+               }}
             >
               <section className="mt-4 mb-4">
                 <div>
