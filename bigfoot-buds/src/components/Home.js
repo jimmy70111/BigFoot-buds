@@ -103,7 +103,8 @@ const Home = () => {
             <img
               src={main}
               alt="Main image"
-              style={{width:"50%"}}
+              style={{ objectFit: "scale-down", height: "auto" }}
+
             />
           </div>
 
