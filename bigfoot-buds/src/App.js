@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom"; // Added useLocation
 import Home from "./components/Home";
 import CheckoutForm from "./components/CheckoutForm";
-import Nav from "./components/Nav";
+import Navigation from "./components/Nav";
 import Contact from "./components/contact"; 
 import Hybrid from "./components/hybrid"; 
 import Sativa from "./components/sativa"; 
@@ -16,7 +16,7 @@ function App() {
   return (
     <>  
     <AgeVerificationModal/>
-      <Nav />
+      <Navigation />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
