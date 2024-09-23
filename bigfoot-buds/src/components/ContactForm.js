@@ -37,9 +37,14 @@ const ContactForm = () => {
         Message: ${formData.message}
       `;
 
-      emailjs.send('service_8d2mm58', 'template_c3g1rwj', {
-        message: formattedMessage,
-      }, 'fNtODhH35P3m2W_Tj')
+      emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        {
+          message: formattedMessage,
+        },
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
       .then(() => {
         alert('Message sent successfully!');
       })
@@ -49,6 +54,7 @@ const ContactForm = () => {
     }
     setValidated(true);
   };
+
 
   return (
 
