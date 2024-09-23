@@ -1,6 +1,6 @@
 ## Prerequisites
 
-# Custom E-commerce Website for Product Sales
+# Custom E-commerce Website 
 
 This project is a custom e-commerce website designed and implemented for a client. The platform allows users to browse and purchase products, with additional features like secure authentication and wholesale inquiries.
 
