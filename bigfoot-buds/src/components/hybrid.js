@@ -75,7 +75,6 @@ const Hybrid = () => {
                 style={{
                   fontSize: "1.25rem",
                   fontFamily: "'Arial', sans-serif",
-                  
                   backgroundColor: "black",
                 }}
               >
@@ -103,7 +102,7 @@ const Hybrid = () => {
               Featuring all three signature flavors in one exclusive collection
             </h5>
             <Link to="/form" style={linkStyle}>
-              <span>Wholesales</span>
+              <span>Wholesale</span>
             </Link>
           </div>
 
@@ -165,14 +164,10 @@ const Hybrid = () => {
 
 
 
-          <div className="description-container">
+          <div className="flex-container">
             <div
               className="description container mt-4"
-              style={{                 fontFamily: "'Arial', sans-serif",
-
-
-
-               }}
+              style={{ fontFamily: "'Arial', sans-serif" }}
             >
               <section className="mt-4 mb-4">
                 <div>
@@ -235,5 +230,4 @@ const Hybrid = () => {
     </div >
   );
 };
-
 export default Hybrid;

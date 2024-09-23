@@ -50,7 +50,7 @@ const Nav = ({ userButtonRef, clerkInstance }) => {
               className="nav-link"
               to="/sativa"
               style={{
-                color: "rgb(255, 230, 0) " , 
+                color: "rgb(255, 0, 0) " , 
                 fontSize: "20px",
                 fontFamily: "'Arial', sans-serif",
               }}

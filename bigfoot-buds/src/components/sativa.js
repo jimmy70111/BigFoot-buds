@@ -101,7 +101,7 @@ const Sativa = () => {
                 Featuring all three signature flavors in one exclusive collection
               </h5>
               <Link to="/form" style={linkStyle}>
-                <span>Wholesales</span>
+                <span>Wholesale</span>
               </Link>
             </div>
           </div>
