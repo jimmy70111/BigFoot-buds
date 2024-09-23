@@ -1,37 +1,120 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spring Boot with HTML, CSS, JS</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Link to CSS in the static folder -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Link to CSS in the static folder -->
     <style>
-        /* CSS styles to center the image */
-        .centered-img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); /*Font*/
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <ul>
-            <li class = "inter-font"><a class="active" href="/">Home</a></li>
-            <li class = "inter-font"><a href="/pages/hybrid.html" style="color: rgb(139, 202, 223)">Hybrid</a></li>
-            <li class = "inter-font"><a href="/pages/sativa.html" style="color: rgb(255, 230, 0)">Sativa</a></li>
-            <li class = "inter-font"><a href="/pages/indica.html" style="color: rgb(250, 142, 160)">Indica</a></li>
-            <li class = "inter-font"><a href="/pages/contact.html">Contact</a></li>
-        </ul>
+      <div class="container my-4 d-flex align-items-center">
+        <div class="me-3">
+          <img
+            src="/images/logo.png"
+            class="img-fluid"
+            alt="Logo"
+            style="width: 160px; height: auto"
+          />
+        </div>
+        <nav class="nav justify-content-center flex-grow-1">
+          <a
+            class="nav-link active"
+            href="/"
+            style="
+              color: black;
+              font-size: 20px;
+              font-family: 'Times New Roman', serif;
+            "
+            >Home</a
+          >
+          <a
+            class="nav-link"
+            href="/pages/hybrid.html"
+            style="
+              color: black;
+              font-size: 20px;
+              font-family: 'Times New Roman', serif;
+            "
+            >Hybrid</a
+          >
+          <a
+            class="nav-link"
+            href="/pages/sativa.html"
+            style="
+              color: black;
+              font-size: 20px;
+              font-family: 'Times New Roman', serif;
+            "
+            >Sativa</a
+          >
+          <a
+            class="nav-link"
+            href="/pages/indica.html"
+            style="
+              color: black;
+              font-size: 20px;
+              font-family: 'Times New Roman', serif;
+            "
+            >Indica</a
+          >
+          <a
+            class="nav-link"
+            href="/pages/contact.html"
+            style="
+              color: black;
+              font-size: 20px;
+              font-family: 'Times New Roman', serif;
+            "
+            >Contact</a
+          >
+        </nav>
+      </div>
+
+      <style>
+        @media (max-width: 768px) {
+          nav.nav {
+            margin-top: 40px; /* Adjust margin for smaller screens */
+          }
+        }
+      </style>
     </header>
     
-    <main>
-        <img class="centered-img" src="/images/contact.png" alt="Contact Image">
+    <main class="d-flex justify-content-center align-items-center" >
+        <img class="img-fluid" src="/images/contact.png" alt="Contact Image">
     </main>
+    
 
-    <script src="/js1/script.js"></script> <!-- Link to JS in the static folder -->
-</body>
+
+    <script src="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+
+    <!-- Link to JS in the static folder -->
+  </body>
 </html>
+
+
