@@ -142,10 +142,14 @@ const Home = () => {
                   </span>
                 </h3>
                 <div className="description-content">
-                  <p className="itemContent ingredient">
-                    The ultimate storage solution for cannabis enthusiasts who
-                    demand both quality and style.
-                  </p>
+                <p className="itemContent ingredient">
+                AAA Grade Hemp Flower does contain traces of THC that are within the legal limits. YOU MAY FAIL A DRUG TEST!
+
+<ul>
+  <li>The Agricultural Improvement Act of 2018 Sections 10113-10114</li>
+  <li>Hemp Flower contains less than .3% Delta 9 THC</li>
+</ul>
+</p>
                 </div>
               </section>
               <hr />
@@ -162,9 +166,7 @@ const Home = () => {
                 </h3>
                 <div className="description-content">
                   <p className="itemContent testimonials">
-                    Crafted with care and wrapped in durable, rustic canvas, these
-                    jars are designed to keep your cannabis fresh, potent, and
-                    protected.
+                  Great flower at wholesale price. I pay $400 for 2oz jars at my local wholesaler. Customers see the jar on the shelf and want to take a look and a smell. I just learned the mason jar is a nod to the old NC moonshine days. Me and my customers love the product and supporting local companies.
                   </p>
                 </div>
               </section>
