@@ -132,7 +132,7 @@ const Home = () => {
               <hr />
               <section className="mb-4">
                 <h3>
-                  Ingredient&nbsp;
+                Disclaimer&nbsp;
                   <span
                     onClick={(e) => toggle(e, "ingredient")}
                     className="text-primary"
