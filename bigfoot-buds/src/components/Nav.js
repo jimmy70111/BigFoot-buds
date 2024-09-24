@@ -10,7 +10,7 @@ import {
 } from "@clerk/clerk-react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "./button.css";
+import "./Nav.css";
 
 const Navigation = ({ userButtonRef, clerkInstance }) => {
   return (
@@ -20,13 +20,14 @@ const Navigation = ({ userButtonRef, clerkInstance }) => {
           src={logo}
           className="img-fluid"
           alt="Logo"
-          style={{ width: "160px", height: "auto" }}
+          style={{ height: "100%" }}
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="nav justify-content-center ">
           <Nav.Link
+            as={Link}
             className="nav-link active"
             to="/"
             style={{
@@ -38,6 +39,7 @@ const Navigation = ({ userButtonRef, clerkInstance }) => {
             Home
           </Nav.Link>
           <Nav.Link
+            as={Link}
             className="nav-link"
             to="/hybrid"
             style={{
@@ -49,6 +51,7 @@ const Navigation = ({ userButtonRef, clerkInstance }) => {
             Hybrid
           </Nav.Link>
           <Nav.Link
+            as={Link}
             className="nav-link"
             to="/sativa"
             style={{
@@ -60,6 +63,7 @@ const Navigation = ({ userButtonRef, clerkInstance }) => {
             Sativa
           </Nav.Link>
           <Nav.Link
+            as={Link}
             className="nav-link"
             to="/indica"
             style={{
@@ -71,6 +75,7 @@ const Navigation = ({ userButtonRef, clerkInstance }) => {
             Indica
           </Nav.Link>
           <Nav.Link
+            as={Link}
             className="nav-link"
             to="/contact"
             style={{
@@ -81,20 +86,19 @@ const Navigation = ({ userButtonRef, clerkInstance }) => {
           >
             Contact
           </Nav.Link>
+
+          <div id="user-ops">
+            <SignedOut>
+              <SignInButton id="signin" />
+              <SignUpButton id="signup" />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
+
         </Nav>
       </Navbar.Collapse>
-
-      <div className="col-auto">
-        <div id="user-ops">
-          <SignedOut>
-            <SignInButton id="signin" />
-            <SignUpButton id="signup" />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </div>
-      </div>
     </Navbar>
   );
 };

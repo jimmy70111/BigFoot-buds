@@ -18,6 +18,9 @@ body {
   
 }
 
+
+
+
 img {
   width: 100%;
 }
@@ -41,6 +44,10 @@ h1 {
   display: block !important;
 }
 
+
+.nav-link {
+  text-align: center;
+}
 
 
 .flex-container {
