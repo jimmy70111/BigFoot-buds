@@ -4,6 +4,11 @@
 
 This project is a custom e-commerce website designed and implemented for a client. The platform allows users to browse and purchase products, with additional features like secure authentication and wholesale inquiries.
 
+<img width="1163" alt="jimmyimg" src="https://github.com/user-attachments/assets/155c1f49-689d-4823-ba6b-7afece6c9da7">
+
+
+
+
 ## Project Overview
 
 - **Client Project** | Hosted on **AWS EC2**
